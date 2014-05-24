@@ -21,7 +21,7 @@
 #endif
 
 #include "ParticleStructs.h"
-#include <vector.h>
+#include <vector>
 #include <iostream>
 #include <fstream>
 #include <pthread.h>
