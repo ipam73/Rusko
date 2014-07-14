@@ -218,7 +218,7 @@ STImage::SavePNG(const std::string& filename) const
 
     // allocate a set of row pointers that points directly into the existing
     // array of STPixels
-    png_bytepp rowPointers = (png_bytepp)png_malloc( pngPtr, png_sizeof(png_bytep) * mHeight );
+    png_bytepp rowPointers = (png_bytepp)png_malloc( pngPtr, sizeof(png_bytep) * mHeight );
 
     for (int i=0; i<mHeight; i++)
         rowPointers[i] = (png_bytep)(mPixels + (mHeight-i-1)*mWidth);
